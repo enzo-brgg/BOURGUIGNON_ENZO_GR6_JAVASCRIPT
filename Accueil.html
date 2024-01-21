@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title> Librairies </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body class="light">
+  <audio src="video/Mondstadt_ost.mp3" autoplay loop> </audio>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="main.js"></script>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="slide1">Mondstadt, 
+            Région de l'Archon Anémo 
+          </div>
+          <div class="swiper-slide" id="slide2"> Liyue, Région de l'Archon Géo
+          </div>
+          <div class="swiper-slide" id="slide3"> Inazuma, Région de l'Archon Electro
+          </div>
+          <div class="swiper-slide" id="slide4"> Sumeru, Région de l'Archon Dendro
+          </div>
+          <div class="swiper-slide" id="slide5">  Fontaine, Région de l'Archon Hydro
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+          <!-- Swiper -->
+        
+    </div>
+   <!-- MENU DE NAVIGATION-->
+
+   <nav>
+    <a href="Accueil.html" id="active">Accueil</a>
+    <a href="Perso_regions.html">Personnages par région</a> 
+    <a href="Contact.html">Contact</a>
+   </nav>
+   
+ <!-- Portfolio -->
+<main class="portfolio">
+
+    <div class="portfolio-elements">
+      <div class="card">
+        <div class="card-header">
+            <p class="card-title"> Venti, le Barde</p>
+            <div class="card-axe"> Archon Anémo de la région de Mondstad</div>
+        </div>  
+        <a href="img/venti.png">
+          <img src="img/venti.png" alt="venti">
+        </a>
+  </div> 
+
+        <div class="card">
+          <div class="card-header">
+              <p class="card-title"> Zhongli, Morax</p>
+              <div class="card-axe"> Archon Géo de la région de Liyue</div>
+          </div>  
+          <a href="img/Zhongli.jpeg">
+            <img src="img/Zhongli.jpeg" alt="venti">
+          </a>
+    </div> 
+
+        <div class="card">
+          <div class="card-header">
+            <p class="card-title"> Shogun Raiden</p>
+            <div class="card-axe"> Archon Electro de la région Inazuma</div>
+      </div>  
+      <a href="img/raiden.png">
+        <img src="img/raiden.png" alt="raiden shogun">
+      </a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <p class="card-title"> Nahida</p>
+            <div class="card-axe"> Archon Dendro de la région Sumeru</div>
+        </div>  
+        <a href="img/nahida.png">
+          <img src="img/nahida.png" alt="Nahida">
+        </a>
+      </div>
+
+        <div class="card">
+          <div class="card-header">
+              <p class="card-title"> Foçalors</p>
+              <div class="card-axe"> Archon Hydro de la région Fontaine</div>
+          </div>  
+          <a href="img/foçalors.png">
+            <img src="img/foçalors.png" alt="Foçalors">
+          </a>
+        </div>
+    </div>
+          <!-- Portfolio -->
+
+  <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  <!-- Initialize Swiper -->
+</main>
+<footer>
+<form name="mytheme">
+  <label class="btToggle">
+    <span class="btn">
+      <input type="checkbox" name="theme-mode">
+      <span class="slider"></span>
+    </span> 
+    <span class="label">White mode</span>
+  </label>
+</form>
+</footer>
+</body>
+</html>   
